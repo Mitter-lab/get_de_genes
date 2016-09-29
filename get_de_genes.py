@@ -120,25 +120,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
-# def de_genes(de_file, assembly_file, out_fa):
-# 	"""
-# 	Load de gene file, assembly_fa (unigene).  Extract de genes
-# 	and write to file in FASTA format
-# 	"""
-# 	gene_list = parse_counts_matrix(de_file)
-# 	assembly=Ref_Seq()
-# 	assembly.load_ref_file(assembly_file)
-# 	de_gene_dict={}
-# 	for gene in gene_list:
-# 		if gene in assembly:
-# 			seq=assembly[gene]
-# 			de_gene_dict[gene]=seq
-# 	with open(out_fa, 'w') as f:
-# 		for gene, seq in de_gene_dict.iteritems():
-# 			f.write(gene+'\n')
-#         	lines = (seq[n:n + 64] for n in range(0, len(seq), 64))
-# 	        for i in lines:
-# 				f.write(i+"\n")
-# de_genes("/home/qaafiadmin/seq/avo_trans/reed/de/genes_edgeR/genes.counts.matrix.reedcontrol24_vs_reedinfected24.edgeR.DE_results.P0.001_C2.reedcontrol24-UP.subset",
-# 	"/home/qaafiadmin/seq/avo_trans/reed/assembly/reed_unigene.fasta",
-# 	"test.fa")
+
